@@ -5,29 +5,29 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>portafolio</title>
+  
   <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="assets/css/style.css">
-  
+  <title>Portafolio</title>
 </head>
 
-<body translate="no">
-  <div class="navbar">
+<body>
+  <section class="navbar">
     <div class="navbar__container">
 
-      <!-- <div class="brand">
+      <div class="brand">
         <a class="brand__link" href="#">
           <i class='bx bx-expand-horizontal brand__icon'></i>
-          <span class="brand__name">Nombre</span>
+          <span class="brand__name">Mauricio Patiño</span>
         </a>
-      </div> -->
+      </div>
 
       <div id="menu" class="menu">
         <i class='bx bx-x menu__icon menu--close'></i>
         <nav class="menu__list">
-          <a class="menu__link" href="#">Home</a>
+          <a class="menu__link" href="#home">Home</a>
           <a class="menu__link" href="#about">About</a>
-          <a class="menu__link" href="#aboutme">Acerca de mi</a>
+          <!-- <a class="menu__link" href="#aboutme">Acerca de mi</a> -->
           <a class="menu__link" href="#projects">Projects</a>
           <a class="menu__link" href="#contact">Contact</a>
         </nav>
@@ -35,60 +35,124 @@
 
       <i class='bx bx-menu menu__icon menu--open'></i>
     </div>
-  </div>
+  </section>
 
   <main class="wrapper">
--------------------ABOUT--------------------------------
-    <section id="about" class="about">
-      <div class="about__container">
-        <div class="about__info">
+<!-- -------------------HOME-------------------------------- -->
+    <section id="home" class="home">
+      <div class="home__container">
+        <div class="home__image--container">
+          <div class="home__image">
+            <img src="./assets/img/perfil.png" alt="people">
+          </div>
+
+        <div class="home__info">
           <h2>Soy
             <hr><span>Mauricio</span>
           </h2>
           <p>Desarrollador<br>Front-end</p>
           <p><span>Estudiante</span>  Ing. Electronica</p>
 
-          <div class="about__icons">
-            <a href="http://facebook.com/sdas" target="_blank">
-              <i class='bx bxl-twitter'></i>
-            </a>
+          <div class="home__icons">
+          <a src="./assets/iconos/twitter.svg" target="_blank">
+            <i class='bx bxl-twitter'></i>
+          </a>
+          <a src="./assets/iconos/linkedin.svg" target="_blank">
             <i class='bx bxl-linkedin-square'></i>
+          </a>
+          <a src="./assets/iconos/instagram.svg" target="_blank">
             <i class='bx bxl-instagram'></i>
-          </div>
+          </a>
         </div>
-
-        <div class="about__image--container">
-          <div class="about__image">
-            <img src="./assets/img/perfil.png" alt="people">
-          </div>
         </div>
-        <div class="about__social">
-          <i class='bx bxl-twitter'></i>
-          <i class='bx bxl-linkedin-square'></i>
-          <i class='bx bxl-instagram'></i>
+        
+        </div>
+        <div class="home__social">
+          <i class='bx bxl-twitter' src="./assets/iconos/twitter.svg"></i>
+          <i class='bx bxl-linkedin-square' src="./assets/iconos/linkedin.svg"></i>
+          <i class='bx bxl-instagram' src="./assets/iconos/instagram.svg"></i>
         </div>
       </div>
 
-
-
     </section>
-    <!-- -------------------ABOUT-------------------------------- -->
+    <!-- -------------------HOME-------------------------------- -->
 
 
 <!-- -----------------aboutme-------------------------------- -->
-    <section id="aboutme" class="aboutme">
-      <h2 class="aboutme__title"><span>Acerca de mi</span></h2>
+<section id="about" class="about">
+  <h2 class="title about__title">Acerca de mi</h2>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores a assumenda debitis beatae dolore itaque,
+    mollitia minus. Laboriosam delectus nemo ratione cumque repellat nisi, iste necessitatibus natus sunt eligendi
+    hic?</p>
+</section>
 
-        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum laborum eum porro similique tempore quae culpa debitis recusandae, exercitationem consequatur explicabo assumenda maxime, deleniti dicta nemo fugit, dolores voluptate obcaecati!</p>
-    </section>
 
-    <section id="projects" class="projects">
-      <h2 class="projects__title">Projects</h2>
-    </section>
+<section class="services">
+  <h2 class="title services__title">Servicios</h2>
+  <div id="services" class="services--container">
 
-    <section id="contact" class="contact">
-      <h2 class="contact__title">Contact</h2>
-    </section>
+    <div class="box desing">
+      <div class="services__icons">
+        <img class="ellipse" src="./assets/vectores/Ellipse 14.svg"
+          alt="ellipse">
+        <img class="pencil" src="./assets/iconos/pencil.svg" alt="pencil">
+      </div>
+      <h3>UX/UI Desing</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, molestias! Similique rem quibusdam animi
+        harum a excepturi vel.</p>
+    </div>
+
+    <div class="box marketing">
+      <div class="services__icons">
+        <img class="ellipse" src="./assets/vectores/Ellipse 14.svg"
+          alt="ellipse">
+        <img class="speaker" src="./assets/iconos/speaker.svg" alt="speaker">
+      </div>
+      <h3>Marketing</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, molestias! Similique rem quibusdam animi
+        harum a excepturi vel.</p>
+    </div>
+
+    <div class="box research">
+      <div class="services__icons">
+        <img class="ellipse" src="./assets/vectores/Ellipse 14.svg"
+          alt="ellipse">
+        <img class="search" src="./assets/iconos/search.svg" alt="search">
+      </div>
+      <h3>Research</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, molestias! Similique rem quibusdam animi
+        harum a excepturi vel.</p>
+    </div>
+
+  </div>
+
+  <div id="projects" class="projects">
+    <h2 class="title projects__title">Mi portafolio</h2>
+    <div class="projects__img">
+      <img src="./assets/img/ejemplo1.jpg" alt="ejemplo1.jpg">
+      <img src="./assets/img/ejemplo2.jpg" alt="ejemplo2.jpg">
+      <img src="./assets/img/ejemplo3.jpg" alt="ejemplo3.jpg">
+    </div>
+
+  </div>
+
+  <section id="contact" class="contact">
+    <h2 class="title projects__title">Contáctame</h2>
+
+    <div class="contac__container">
+      <div class="box celular">
+        <img class="icon email" src="C:\Users\Acer\Desktop\PORTAFOLIO JOSE GONZALEZ\íconos\phone.svg" alt="phone">
+        <h3 class="numero">Numero Celular</h3>
+        <p>+51939417466</p>
+      </div>
+
+      <div class="box email">
+        <img  class="icon email" src="C:\Users\Acer\Desktop\PORTAFOLIO JOSE GONZALEZ\íconos\mail.svg" alt="mail">
+        <h3 class=" title numero">Email</h3>
+        <p>joseangel151@gmail.com</p>
+      </div>
+    </div>
+  </section>
   </main>
 
   <script src="assets/js/main.js"></script>
